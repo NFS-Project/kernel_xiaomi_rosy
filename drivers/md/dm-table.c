@@ -1542,9 +1542,9 @@ static int queue_no_sg_merge(struct dm_target *ti, struct dm_dev *dev,
 }
 
 static int queue_no_inline_encryption(struct dm_target *ti,
-					    struct dm_dev *dev,
-					    sector_t start, sector_t len,
-					    void *data)
+				      struct dm_dev *dev,
+				      sector_t start, sector_t len,
+				      void *data)
 {
 	struct request_queue *q = bdev_get_queue(dev->bdev);
 
